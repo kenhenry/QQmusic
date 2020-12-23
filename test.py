@@ -93,4 +93,5 @@ df = pd.concat([df,df2])
 # dtypedict={'album_name':TEXT,'hot_comments':TEXT,'language':TEXT,'lyric':TEXT,'singer_id':TEXT,'singer_mid':TEXT,'singer_name':TEXT,'song_id':TEXT,'song_mid':TEXT,'song_name':TEXT,'song_time_public':TEXT,'song_type':TEXT,'song_url':TEXT,'subtitle':TEXT}
 df.to_sql(name='abcd', con=engine, if_exists='append',index=False) #,dtype=dtypedict)  # 写入
 #
+
 # print(df1)
