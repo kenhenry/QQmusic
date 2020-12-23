@@ -85,6 +85,10 @@ df = df[['album_name', 'language', 'lyric', 'singer_id','singer_mid', 'singer_na
 print(df.columns)
 print(df.dtypes)
 
+df2 = df
+
+df = pd.concat([df,df2])
+
 
 # print(type(df),len(df))
 
